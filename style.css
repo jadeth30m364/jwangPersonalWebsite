@@ -10,6 +10,15 @@ h1 {
   margin: 15px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+h2 {
+  font-size: 30pt;
+}
+h3 {
+  font-size: 20pt;
+}
+h4 {
+  font-size: 12pt;
+}
 /* dark mode css */
 .darkMode {
   background-color: #1f2933;
@@ -20,6 +29,8 @@ h1 {
   overflow: hidden;
   background-color: #3E4C59;
   border-radius: 4px;
+  position: sticky;
+  top: 0;
 }
   
   /* Style the header links */
@@ -67,7 +78,7 @@ h1 {
   }
 /* light mode css */
 .lightMode {
-  background-color: 	#fafafa;
+  background-color:#fafafa;
   color: #26283d;
 }
 /* Style the header with a grey background and some padding */
@@ -75,6 +86,8 @@ h1 {
   overflow: hidden;
   background-color: #e4e5f1;
   border-radius: 4px;
+  position: sticky;
+  top: 0;
 }
   
   /* Style the header links */
@@ -246,10 +259,84 @@ input:checked + .slider:before {
   margin: 5%;
   padding: 5% 10% 5% 10%;
 }
+
 .aboutMe {
   background-color: #323F4B;
-  padding: 10px;
-  padding-left: 50px;
-  width: 90%;
+  padding: 10%;
+  width: 70%;
   border-radius: 20px;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
 }
+.aboutMe:hover {
+  padding: 11%;
+  
+}
+.aboutMeLight {
+  background-color: #CBD2D9;
+  color: #323F4B;
+  padding: 10%;
+  width: 70%;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.aboutMeLight:hover {
+  padding: 11%;
+  
+}
+.aboutMeChild1 {
+  display: inline-block;
+  width: 50%;
+}
+.aboutMeChild2 {
+  display: block;
+  width: 50%;
+  font-size: 18pt;
+  text-align: right;
+  float: right;
+}
+.profile {
+  border-radius: 50%;
+  width: 60%;
+  margin: 1%;
+}
+.myExperience {
+  text-align: right;
+  margin-right: 10%;
+}
+.experienceBox {
+  width: 50%;
+  background-color: #9394a5;
+  padding: 5%;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  transition: all 0.5s ease-in-out;
+}
+.experienceBox:hover{
+  padding: 6%;
+}
+.projects {
+  text-align: center;
+  width: 90%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 1%;
+}
+#contact {
+  background-color: #323F4B;
+  padding: 10%;
+  width: 70%;
+  border-radius: 20px;
+  opacity: 0.9;
+  margin: 1%;
+}
+img {
+  width: 25%;
+  float: left;
+}
+

@@ -2,6 +2,7 @@ function animate() {
     setTimeout(scramble, 0, "title", 50);
     setTimeout(typeWriter, 150, "intro", "> jade wang.")
     typeWriter();
+
 }
 function scramble(element, speed) {
     var titleText = document.getElementById(element);
@@ -83,4 +84,7 @@ function darkLightToggle(){
     icons.classList.toggle("lightIcons")
     var toggleSwitch = document.getElementById("switch");
     toggleSwitch.classList.toggle("lightSlider")
+    var about = document.getElementById("aboutMe");
+    about.classList.toggle("aboutMeLight")
 }
+
