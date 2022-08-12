@@ -270,7 +270,8 @@ input:checked + .slider:before {
 }
 .aboutMe:hover {
   padding: 11%;
-  
+  background-color: #2d3943;
+
 }
 .aboutMeLight {
   background-color: #CBD2D9;
@@ -283,6 +284,8 @@ input:checked + .slider:before {
 }
 .aboutMeLight:hover {
   padding: 11%;
+  background-color: #c6ccd2;
+
   
 }
 .aboutMeChild1 {
@@ -317,6 +320,7 @@ input:checked + .slider:before {
 }
 .experienceBox:hover{
   padding: 6%;
+  background-color: #97989f;
 }
 .projects {
   text-align: center;
