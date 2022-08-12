@@ -7,17 +7,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <meta name="author" content="Jade Anabelle Wang">
-        <title>home page</title>
+        <title>jade wang</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body>
-        <div class="header">
-            <a href="#default" class="logo">L</a>
-            <div class="header-right">
+    <body onload="animate()">
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div id="header" class="darkHeader">
+            <div class="header-left">
               <a href="#about">about me</a>
               <a href="#experience">experience</a>
               <a href="#projects">projects</a>
@@ -26,13 +29,28 @@
               
             </div>
           </div>
+        <!-- The social media icon bar -->
+    <div id="icons" class="icon-bar">
+        <a href="https://www.linkedin.com/in/jadewang26/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/jadeth30m364"><i class="fa fa-github"></i></a>
+        <a href="https://www.youtube.com/channel/UCE_UbK_zPD872_Bfm94-qNg"><i class="fa fa-youtube"></i></a>
+        <!-- Rounded switch -->
+        <label class="switch" >
+            <input type="checkbox" onclick="darkLightToggle()" >
+            <span class="slider" id="switch"></span>
+        </label>
+        
+    </div>
+    
         <div class="intro">
-            <p>hi, my name is </p>
-            <h1>jade wang</h1>
+            <p id="title">> hi, my name is </p>
+            <h1 id="intro"></h1>
+        </div>
+        <div class="aboutMe">
+            <h2 id="about">about me</h2>
+            
         </div>
         
-
-        <h2 id="about">about me</h2>
         <h2 id="experience">my experience</h2>
         <h2 id="projects">past projects</h2>
         <h2 id="contact">contact me</h2>

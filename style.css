@@ -1,23 +1,29 @@
 body {
-    background-color: #1f2933;
-    color: #F5F7FA;
-    font-family: 'Open Sans', sans-serif;
+  background-color: #1f2933;
+  color: #F5F7FA;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
-    font-size: 60pt;
-    text-align: left;
-    padding: 1px;
-    margin: 15px;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
+  font-size: 60pt;
+  text-align: left;
+  padding: 1px;
+  margin: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* dark mode css */
+.darkMode {
+  background-color: #1f2933;
+  color: #F5F7FA;
+}
 /* Style the header with a grey background and some padding */
-.header {
-    overflow: hidden;
-    background-color: #3E4C59;
-  }
+.darkHeader {
+  overflow: hidden;
+  background-color: #3E4C59;
+  border-radius: 4px;
+}
   
   /* Style the header links */
-  .header a {
+  .darkHeader a {
     float: left;
     color: #F5F7FA;
     text-align: center;
@@ -26,43 +32,224 @@ h1 {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    transition: all 0.5s ease-in-out;
   }
   
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
   
   /* Change the background color on mouse-over */
-  .header a:hover {
+  .darkHeader a:hover {
     background-color: #616E7C;
     color: #F5F7FA;
+    padding: 20px; 
   }
   
   /* Style the active/current link*/
-  .header a.active {
+  .darkHeader a.active {
     background-color: #CBD2D9;
     color: #1f2933;
   }
   
   /* Float the link section to the right */
-  .header-left {
+  .darkHeader-left {
     float: left;
   }
   
   /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
   @media screen and (max-width: 500px) {
-    .header a {
+    .darkHeader a {
       float: none;
       display: block;
       text-align: left;
     }
-    .header-left {
+    .darkHeader-left {
       float: none;
     }
   }
+/* light mode css */
+.lightMode {
+  background-color: 	#fafafa;
+  color: #26283d;
+}
+/* Style the header with a grey background and some padding */
+.lightHeader {
+  overflow: hidden;
+  background-color: #e4e5f1;
+  border-radius: 4px;
+}
+  
+  /* Style the header links */
+  .lightHeader a {
+    float: left;
+    color: #26283d;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  
+  /* Change the background color on mouse-over */
+  .lightHeader a:hover {
+    background-color: #9394a5;
+    color: #26283d	;
+    padding: 20px; 
+  }
+  
+  /* Float the link section to the left */
+  .lightHeader-left {
+    float: left;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .lightHeader a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .lightHeader-left {
+      float: none;
+    }
+  }
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 93%;
+  
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  margin: 15px;
+  background-color: #fafafa;
+  color: #1f2933;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #616E7C;
+  color: #fafafa;
+  
+}
+.lightIcons a{
+  background-color: #616E7C;
+  color: #fafafa;
+
+}
+.lightIcons a:hover {
+  background-color: #1f2933;
+  color: #616E7C;
+  
+}
+/* The switch - the box around the slider */
+.switch {
+  position: fixed;
+  display: block;
+  width: 34px;
+  height: 60px;
+  right: 30%;
+  
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #616E7C;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌙";
+  color: black;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.lightSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #616E7C;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.lightSlider:before {
+  position: absolute;
+  content: "🔆";
+  color: black;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+  text-align: center;
+}
+
+input:checked + .slider {
+  background-color: #CBD2D9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #CBD2D9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateY(-26px);
+  -ms-transform: translateY(-26px);
+  transform: translateY(-26px);
+}
+
 .intro {
   margin: 5%;
   padding: 5% 10% 5% 10%;
+}
+.aboutMe {
+  background-color: #323F4B;
+  padding: 10px;
+  padding-left: 50px;
+  width: 90%;
+  border-radius: 20px;
 }
